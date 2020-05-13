@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import datetime
+import os
 
 client = discord.Client()
 
@@ -28,5 +29,5 @@ async def on_message(message):
                 except:
                     pass
 
-
-client.run('NzA5OTMzMjQ2NDgxMTcwNDU2.XrtG8Q.yA0Upu3zMEZ1lAxHedl2VWsrCMw')
+access_token = os.environ["BOT_TOKEN"]
+client.run()
